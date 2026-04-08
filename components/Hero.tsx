@@ -11,8 +11,8 @@ export default function Hero() {
     >
       <div className="max-w-5xl w-full mx-auto text-center">
         
-        {/* Profile Image */}
-        <div className="mb-10 flex justify-center">
+        {/* Profile Image + Name */}
+        <div className="mb-10 flex flex-col items-center">
           <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl">
             <Image
               src="/profile.jpeg"
@@ -22,6 +22,11 @@ export default function Hero() {
               priority
             />
           </div>
+
+          {/* Name */}
+          <p className="mt-4 text-lg sm:text-2xl md:text-5xl font-semibold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+            Dorra Nsiri
+          </p>
         </div>
 
         {/* Title */}
